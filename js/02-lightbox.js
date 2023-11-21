@@ -20,12 +20,11 @@ galleryList.insertAdjacentHTML("beforeend", photosList);
 
 console.log(galleryItems);
 
-// const click
-
-// new SimpleLightbox('.gallery a', { /* options */ });
-
-// new SimpleLightbox('.gallery a', { /captionDelay });
-
-// var gallery = $('.gallery a').simpleLightbox();
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+  nav: true,
+  captionPosition: "bottom",
+});
 
 // gallery.next(); // Next Image
